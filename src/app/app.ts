@@ -20,22 +20,22 @@ export function initApp(root: HTMLElement): void {
 }
 
 function syncDialogs(root: HTMLElement, state: AppState, store: Store): void {
-  const presetDialog = root.querySelector<HTMLDialogElement>(\"#dialog-presets\");
+  const presetDialog = root.querySelector<HTMLDialogElement>("#dialog-presets");
   if (presetDialog) {
     if (state.ui.presetDialogOpen && !presetDialog.open) {
       presetDialog.showModal();
-      presetDialog.querySelector<HTMLInputElement>(\"#preset-name\")?.focus();
+      presetDialog.querySelector<HTMLInputElement>("#preset-name")?.focus();
     }
     if (!state.ui.presetDialogOpen && presetDialog.open) {
       presetDialog.close();
     }
   }
 
-  const historyDialog = root.querySelector<HTMLDialogElement>(\"#dialog-history\");
+  const historyDialog = root.querySelector<HTMLDialogElement>("#dialog-history");
   if (historyDialog) {
     if (state.ui.historyDialogOpen && !historyDialog.open) {
       historyDialog.showModal();
-      historyDialog.querySelector<HTMLButtonElement>(\"[data-action='close-history']\")?.focus();
+      historyDialog.querySelector<HTMLButtonElement>("[data-action='close-history']")?.focus();
     }
     if (!state.ui.historyDialogOpen && historyDialog.open) {
       historyDialog.close();
