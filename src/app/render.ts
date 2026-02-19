@@ -13,6 +13,7 @@ function modeLabel(mode: Mode): string {
 }
 
 export function renderApp(root: HTMLElement, state: AppState): void {
+  const baseUrl = import.meta.env.BASE_URL;
   const inputValue = escapeHtml(state.input);
   const singleOutput = state.output;
   const packOutput = state.outputPack;
@@ -75,6 +76,7 @@ export function renderApp(root: HTMLElement, state: AppState): void {
       <div class="background"></div>
       <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
       <header class="app__header">
+        <img class="brand-logo" src="${baseUrl}carlas-hub-logo.png" alt="Carla's Hub logo" />
         <div>
           <p class="kicker">Refine raw text into structured prompts</p>
           <h1>textToPrompt</h1>

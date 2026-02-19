@@ -50,6 +50,14 @@ main.app {
   z-index: 1;
   max-width: 1080px;
   margin: 0 auto 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.brand-logo {
+  width: min(420px, 80vw);
+  height: auto;
+  filter: drop-shadow(0 8px 24px rgba(110, 231, 183, 0.25));
 }
 
 .kicker {
