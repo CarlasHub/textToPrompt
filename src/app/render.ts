@@ -201,6 +201,10 @@ export function renderApp(root: HTMLElement, state: AppState): void {
         </div>
       </dialog>
 
+      <footer class="site-footer">
+        <p>by carla © 2026</p>
+      </footer>
+
       <dialog id="dialog-history" aria-labelledby="history-title">
         <div class="dialog">
           <header class="dialog__header">

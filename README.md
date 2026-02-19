@@ -105,7 +105,3 @@ textToPrompt does not store or send any data remotely. It only uses `localStorag
 - Reset settings restores default mode/toggles and clears output to avoid mismatched settings.
 - Importing presets merges them into the existing list with new IDs.
 - History is capped at the last 20 generations.
-
----
-
-Credit: [CarlasHub](https://github.com/CarlasHub)

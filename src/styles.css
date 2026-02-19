@@ -359,6 +359,18 @@ dialog::backdrop {
   font-size: 0.9rem;
 }
 
+.site-footer {
+  margin: 2rem auto 0;
+  max-width: 1080px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
